@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['username']) && isset(
         // A jelszót hasheljük
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
+
         // Új felhasználó hozzáadása a users.txt fájlhoz
         $newUser = $username . '|' . $hashedPassword . '|' . $role . PHP_EOL;
         file_put_contents('users.txt', $newUser, FILE_APPEND);

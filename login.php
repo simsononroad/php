@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
     $dataFile = 'users.txt';
-
     if (empty($username) || empty($password)) {
         echo "A felhasználónév és a jelszó megadása kötelező!";
         exit;
@@ -34,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $users = file($dataFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($users as $user) {
             list($savedUsername, $savedPassword, $savedRoles) = explode('|', $user);
+            
             if ($savedUsername === $username && password_verify($password, $savedPassword)) {
                 $_SESSION['username'] = $username;
                 $roles = explode(',', $savedRoles); // Több rang kezelése
