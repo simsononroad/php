@@ -49,10 +49,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     exit;
 }
 
-// A mappa PHP fájljainak listázása
-$files = array_filter(scandir($editableDirectory), function ($file) {
-    return pathinfo($file, PATHINFO_EXTENSION) === 'php'; // Csak PHP fájlok
-});
+// A mappa összes fájljának listázása
+$files = scandir($editableDirectory);
+
+// Töröljük a . és .. elemeket (a jelenlegi és a szülő könyvtár)
+$files = array_diff($files, array('.', '..'))
 ?>
 <!DOCTYPE html>
 <html>

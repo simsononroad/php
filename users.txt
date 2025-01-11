@@ -1,1 +1,2 @@
 benji|$2y$10$cJnwTg2hWUGHA8rNd644nuQmwGfPNjAnLBKnFUzzFyK6hWeFmy3fu|admin,családtag,felhasználó
+test|$2y$10$COU2tlZRKMGsOqCv7NofqeRM6TFJhdVLGn.3g2mQ6T6gCy75FEhNi|felhasználó

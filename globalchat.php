@@ -63,8 +63,7 @@ $messages = file_exists('messages.txt') ? file_get_contents('messages.txt') : ''
             xhr.send();
         }
 
-        // Minden 3 másodpercben frissíteni a chatet
-        setInterval(refreshChat, 3000);
+        setInterval(refreshChat, 0000);
     </script>
 </head>
 <body>
@@ -85,9 +84,10 @@ $messages = file_exists('messages.txt') ? file_get_contents('messages.txt') : ''
             <textarea name="message" rows="5" placeholder="Írd ide az üzeneted..."></textarea><br><br>
             <button type="submit">Üzenet küldése</button>
         </form>
-
         <br>
         <a href="logout.php">Kijelentkezés</a>
-    </div>
+        
+        <a href="login.php" class="button">Vissza a főoldalra</a>
+        </div>
 </body>
 </html>
