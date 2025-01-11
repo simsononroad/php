@@ -1,2 +1,3 @@
-benji|$2y$10$cJnwTg2hWUGHA8rNd644nuQmwGfPNjAnLBKnFUzzFyK6hWeFmy3fu|admin,családtag,felhasználó
-test|$2y$10$COU2tlZRKMGsOqCv7NofqeRM6TFJhdVLGn.3g2mQ6T6gCy75FEhNi|felhasználó
+benji|$2y$10$GN8mvKRc4Ug1Q1QIBWjPuOx3StmeGcfdefu7MfjnurgEnmnd8.PEm|admin,családtag,felhasználó
+tést|$2y$10$COU2tlZRKMGsOqCv7NofqeRM6TFJhdVLGn.3g2mQ6T6gCy75FEhNi|felhasználó
+tünde|$2y$10$DGUS.v2pWNlCx2vgrhmQmee09b2MY9GS7uWuuO3bymUzza8ZOygqe|felhasználó

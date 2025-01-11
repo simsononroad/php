@@ -28,34 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // A fájl tartalmának betöltése
     $fileContent = file_get_contents($filePath);
-    ?>
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title>Fájl szerkesztése: <?php echo htmlspecialchars($_POST['file']); ?></title>
-    </head>
-
-    <body>
-        <h2>Fájl szerkesztése: <?php echo htmlspecialchars($_POST['file']); ?></h2>
-        <form method="post">
-            <textarea name="content" rows="25" cols="100"><?php echo htmlspecialchars($fileContent); ?></textarea><br><br>
-            <input type="hidden" name="file" value="<?php echo htmlspecialchars($_POST['file']); ?>">
-            <button type="submit" name="save">Mentés</button>
-        </form>
-        <br>
-        <a href="admin.php">Vissza a fájllistához</a>
-    </body>
-
-    </html>
-    <?php
-    exit;
 }
-
-// A mappa PHP fájljainak listázása
-$files = array_filter(scandir($editableDirectory), function ($file) {
-    return pathinfo($file, PATHINFO_EXTENSION) === 'php'; // Csak PHP fájlok
-});
 ?>
 <!DOCTYPE HTML>
 <html lang="hu">
