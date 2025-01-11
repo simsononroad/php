@@ -63,7 +63,7 @@ $messages = file_exists('messages.txt') ? file_get_contents('messages.txt') : ''
             xhr.send();
         }
 
-        setInterval(refreshChat, 0000);
+        setInterval(refreshChat, 1000);
     </script>
 </head>
 <body>
